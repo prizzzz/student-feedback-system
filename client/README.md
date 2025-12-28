@@ -1,70 +1,49 @@
-# Getting Started with Create React App
+# 🎓 Student Feedback System
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A professional, high-impact full-stack web application designed to empower academic growth through transparent and meaningful feedback loops.
 
-## Available Scripts
+## 🚀 Features
 
-In the project directory, you can run:
+- **Role-Based Access Control**: Secure login portals for Students, Faculty, and Administrators with role-locking validation.
+- **Admin Management**: Full CRUD operations for users, classes, and subjects.
+- **Dynamic Feedback Loop**: Students can rate and review courses; data is automatically linked to specific Class IDs.
+- **Real-time Status**: Live system monitoring and analytics dashboard.
+- **Responsive Design**: Modern UI built with a professional slate and indigo aesthetic.
 
-### `npm start`
+## 🛠️ Tech Stack
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Frontend**: React.js, Lucide-React Icons
+- **Backend**: Node.js, Express.js
+- **Database**: MongoDB Atlas (Mongoose ODM)
+- **Security**: JSON Web Tokens (JWT) & Environment Variable protection
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 📦 Installation & Local Setup
 
-### `npm test`
+### 1. Clone the repository
+git clone [https://github.com/prizzzz/student-feedback-system.git]
+cd student-feedback-system
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 2. Configure the Backend
+# Navigate to server folder
+cd server
+npm install
 
-### `npm run build`
+Create a .env file in the server directory and add your credentials:
+PORT=5000
+MONGODB_URI=your_mongodb_connection_string
+JWT_SECRET=your_secret_key
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Start the server:
+node server.js
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### 3. Configure the Frontend
+# Navigate to client folder
+cd ../client
+npm install
+npm start
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 🛡️ Security Note
+This project utilizes .env files to protect sensitive data like MongoDB connection strings and JWT secrets. Ensure that your .env is listed in your .gitignore before pushing to any public repository.
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## 📄 License
+This project is open-source and available under the MIT License.
